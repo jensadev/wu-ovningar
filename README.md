@@ -16,4 +16,15 @@ Naviera till https://jensnti.github.io/wu-januari/ och arbeta med valfri del.
     * CSS
 * Kopiera, ändra och testa.
 * Gör uppgifterna.
+* Committa ofta
+* Pusha vid behov
+
+För att få uppdateringar från template repot(dvs. det jag har gjort) så
+prova
+
+    git remote add template https://github.com/jensnti/wu-januari
+    git fetch --all
+    git merge --allow-unrelated-histories template/master
+
+Öppna sedan i code, klicka på de filer som ändrats och acceptera incoming changes.
 
