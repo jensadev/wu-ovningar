@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ikoner</title>
+    <link rel="stylesheet" href="../css-shared/reset.css">
+    <!-- länk till google font hosting av material ikonerna -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/ikon.css">
+</head>
+<body>
+    <main>
+        <h1>Ikoner</h1>
+        <p class="lead">I det här exemplet så tänker jag jobba med
+            <a href="https://material.io/resources/icons">Googles Material Design Icons</a>.
+            De är lättillgängliga, innehåller ett stort utbud och är lättanvända.
+        </p>
+        <p>För att använda dem så behöver du länka in dess stylesheet från Googles CDN, på samma 
+            sätt som du använder Googles fonter.
+        </p>
+            <code>
+                &#x3C;link href=&#x22;https://fonts.googleapis.com/icon?family=Material+Icons&#x22; rel=&#x22;stylesheet&#x22;&#x3E;
+            </code>
+        <p>För att sedan använda en ikon så letar du först reda på den du ska använda, <a href="https://material.io/resources/icons">här</a> och sedan
+            kopierar du det element med tillhörande CSS klass som sidan visar. Till exempel:
+        </p>
+            <code>
+                &#x3C;i class=&#x22;material-icons&#x22;&#x3E;accessibility&#x3C;/i&#x3E;
+            </code>
+        <p>
+            Resultatet blir då <i class="material-icons">accessibility</i> och så är du igång!
+        </p>
+        <p>Du kan använda ikonera i andra element, till exempel som knappar eller länkar. Notera
+            dock att då påverkas ikonen av dina länk regler för a elementet. Placeringen är även beroende
+            av din sidas line-height och kom ihåg att ikonen är en font. Så om du inspeketerar css reglerna
+            för ikonen så ser du klassens egenskaper.
+            <a href="#">
+                <i class="material-icons">
+                    favorite
+                </i>
+            </a>
+        </p>
+        <code>
+            &#x3C;a href=&#x22;#&#x22;&#x3E;&#x3C;i class=&#x22;material-icons&#x22;&#x3E;favorite&#x3C;/i&#x3E;&#x3C;/a&#x3E;
+        </code>
+        <p>
+            En större ikon kan skapas genom att ändra font storleken.
+            <i class="material-icons" style="font-size: 48px;">
+                favorite
+            </i>
+        </p>
+    </main>
+</body>
+</html>
