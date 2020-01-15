@@ -26,5 +26,6 @@ prova
     git fetch --all
     git merge --allow-unrelated-histories template/master
 
-Öppna sedan i code, klicka på de filer som ändrats och acceptera incoming changes.
-
+Det kommer stå error, det är ok. Öppna sedan code, de filer med incoming changes är markerade med ett C,
+klicka på de filerna och acceptera incoming changes för att kopiera de
+nya ändringarna.
