@@ -19,8 +19,7 @@ Naviera till https://jensnti.github.io/wu-januari/ och arbeta med valfri del.
 * Committa ofta
 * Pusha vid behov
 
-För att få uppdateringar från template repot(dvs. det jag har gjort) så
-prova
+För att få uppdateringar från template repot(dvs. det jag har gjort) så kör detta
 
     git remote add template https://github.com/jensnti/wu-januari
     git fetch --all
@@ -29,3 +28,5 @@ prova
 Det kommer stå error, det är ok. Öppna sedan code, de filer med incoming changes är markerade med ett C,
 klicka på de filerna och acceptera incoming changes för att kopiera de
 nya ändringarna.
+
+Om du har gjort detta tidigare så behöver du inte köra remote add.
