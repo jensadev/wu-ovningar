@@ -14,7 +14,7 @@ window.addEventListener('load', (event) => {
 
     button.addEventListener('click', (e) => {
         e.preventDefault();
-        console.log("Button clicked");
+        console.log('Button clicked');
         console.log(e);
     });
 
@@ -22,14 +22,14 @@ window.addEventListener('load', (event) => {
 
     aBtn.addEventListener('click', (e) => {
         e.preventDefault();
-        console.log("Link clicked");
+        console.log('Link clicked');
     });
 
     let counterBtn = document.querySelector('#counter-button');
     let counter = 0;
     counterBtn.addEventListener('click', (e) => {
         e.preventDefault();
-        counterBtn.textContent = "Clicked: " + ++counter;
-        console.log("Link clicked");
+        counterBtn.textContent = 'Clicked: ' + ++counter;
+        console.log('Link clicked');
     });
 });

@@ -16,3 +16,7 @@
 .btns > li {
     padding: .5rem 0rem;
 }
+
+.btn-rounded {
+    border-radius: .5rem;
+}
