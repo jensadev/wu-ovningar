@@ -1,0 +1,24 @@
+extends layout
+
+block head
+  -var title = "Navigation"
+  title Webbutveckling - #{title}
+
+  link(rel='stylesheet', href='css/navbar.css')
+
+block nav
+  include components/nav.pug
+
+block content
+  main.container.pt-1
+    h1.text-caps Navigation
+    p.lead Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere ducimus inventore repellendus quasi quisquam fuga. Tenetur, sint, fuga doloremque, praesentium voluptates veniam temporibus ratione at asperiores architecto adipisci quisquam libero.
+    h2 Uppgifter
+    ul.uppgifter
+      li Byt ut Navbar Brand mot en Ikon.
+      li Byt ut Navbar Brand mot en Logotype.
+      li Skapa stilar för en darkmode Navbar.
+      li Skapa några fler sidor och styr länkarna dit.
+      li
+        | Använd flexbox i navbaren för att göra den centrerad eller vänsterställd.(justify-content)
+      li Skapa en egen dropdown.

@@ -1,26 +1,31 @@
 @use 'colors'
 @use 'fonts'
+@use 'media'
 
 body
   line-height: 1.5
   font-family: fonts.$body
   font-weight: 400
-  color: var(--color-dark)
+  color: rgb(var(--color-dark))
 
 h1
-  padding-top: .5rem
-  font-size: 4rem
+  font-size: 2.4rem
   font-weight: 800
   font-family: fonts.$head
+  @include media.medium
+    font-size: 4rem
+
 h2
-  padding-top: .5rem
   color: rgba(var(--color-dark), .8)
-  font-size: 2rem
+  font-size: 1.6rem
   font-weight: 500
-  font-family: fonts.$head
+  font-family: fonts.$lead
+  @include media.medium
+    font-size: 2rem
+
 p
   display: block
-  margin: 1rem 0rem
+  margin: .5rem 0rem
 
 .lead
   color: rgba(var(--color-dark), .8)
@@ -38,8 +43,8 @@ code
 
 a
   text-decoration: none
-  color: var(--color-dark)
+  color: rgb(var(--color-dark))
   font-weight: 500
   &:hover
     text-decoration: underline
-    color: var(--color-primary)
+    color: rgb(var(--color-primary))

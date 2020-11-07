@@ -1,8 +1,8 @@
 :root {
-  --color-dark: #1e1e1e;
-  --color-light: #f0f0f0;
-  --color-white: #fff;
-  --color-primary: #ff4307;
+  --color-dark: 30, 30, 30;
+  --color-light: 240, 240, 240;
+  --color-white: 255, 255, 255;
+  --color-primary: 255, 67, 7;
 }
 
 body {
@@ -11,7 +11,7 @@ body {
 
 .footer {
   margin-top: auto;
-  background-color: var(--color-light);
+  background-color: rgb(var(--color-light));
   padding: 1rem;
 }
 

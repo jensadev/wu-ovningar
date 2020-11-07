@@ -1,0 +1,21 @@
+mixin nav-link(href, name)
+  if name === title
+    li.nav-item
+      a.nav-link.active(href=href)= name
+  else
+    li.nav-item
+      a.nav-link(href=href)= name
+
+block nav
+  nav.navbar
+    a.brand(href='#') Navbar Brand
+    ul.nav
+      +nav-link('../', 'Hem')
+      +nav-link('#', 'Navigation')
+      li.nav-item.dropdown
+        a.nav-link.dropdown-toggle(href='#') Dropdown
+        ul.nav.dropdown-content
+          li.dropdown-item
+            a.nav-link(href='#') Link
+          li.dropdown-item
+            a.nav-link(href='#') Link
