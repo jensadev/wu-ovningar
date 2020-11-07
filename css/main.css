@@ -1,21 +1,30 @@
+:root {
+  --color-dark: #1e1e1e;
+  --color-light: #f0f0f0;
+  --color-white: #fff;
+  --color-primary: #ff4307;
+}
+
 body {
   line-height: 1.5;
-  font-family: "Hind Vadodara", sans-serif;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  color: var(--color-dark);
 }
 
 h1 {
   padding-top: 0.5rem;
-  font-size: 3rem;
-  font-weight: 700;
+  font-size: 4rem;
+  font-weight: 800;
   font-family: "Work Sans", sans-serif;
 }
 
 h2 {
   padding-top: 0.5rem;
-  color: rgba(0, 0, 0, 0.75);
+  color: rgba(var(--color-dark), 0.8);
   font-size: 2rem;
   font-weight: 500;
-  font-family: "Cormorant", serif;
+  font-family: "Work Sans", sans-serif;
 }
 
 p {
@@ -24,7 +33,7 @@ p {
 }
 
 .lead {
-  color: rgba(0, 0, 0, 0.75);
+  color: rgba(var(--color-dark), 0.8);
   font-size: 1.2rem;
 }
 
@@ -40,8 +49,14 @@ code {
   list-style: disc;
 }
 
-small {
-  font-size: 75%;
+a {
+  text-decoration: none;
+  color: var(--color-dark);
+  font-weight: 500;
+}
+a:hover {
+  text-decoration: underline;
+  color: var(--color-primary);
 }
 
 /*# sourceMappingURL=main.css.map */
