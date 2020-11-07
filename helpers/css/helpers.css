@@ -26,3 +26,11 @@
 .center-items {
     align-items: center;
 }
+
+.text-mute {
+    color: #222222;
+}
+
+.text-small {
+    font-size: 75%;
+}
