@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "watch-html": "pug -w -P src/ -o ./",
-    "watch-css": "sass --watch sass/:css/",
-    "build": "pug -P src/ -o ./ && sass sass/:css/",
+    "watch-css": "sass --watch sass/:stylesheets/",
+    "build": "pug -P src/ -o ./ && sass sass/:stylesheets/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

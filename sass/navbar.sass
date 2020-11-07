@@ -4,7 +4,7 @@
   flex-wrap: wrap
   align-items: center
   padding: 1rem
-  background-color: #f8f8f8
+  background-color: rgb(var(--color-light))
   font-size: 1.25rem
 
 /* Making navbar fixed to top */
@@ -38,34 +38,30 @@ a
   text-decoration: none
 
 .nav-link
-  color: rgba(0,0,0,0.5)
-
+  color: rgba(var(--color-dark), .5)
 
   &:hover
-    color: rgba(0,0,0,0.75)
+    color: rgba(var(--color-dark), .75)
 
 .active
-  color: rgba(0,0,0,1)
+  color: rgb(var(--color-dark))
 
 /* CSS for dropdown */
 .dropdown
   position: relative
   display: inline-block
 
-
   &-content
     display: none
     position: absolute
     background-color: #f9f9f9
     min-width: 10rem
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2)
+    box-shadow: 0px 8px 16px 0px rgba(var(--color-dark), .2)
     padding: .5rem
     z-index: 1010
 
-
   &-item
     padding: .25rem .5rem
-
 
   &:hover .dropdown-content
     display: flex
@@ -78,9 +74,8 @@ a
     flex-direction: column
     align-items: flex-start
 
-    .nav
-      flex-direction: column
+  .nav
+    flex-direction: column
 
-
-    .nav-item:first-child &
-      padding-left: 0rem
+  .nav-item:first-child
+    padding-left: 0rem
