@@ -1,0 +1,65 @@
+extends layout
+
+block head
+    link(rel='stylesheet' href='css/footer.css')
+
+block content
+   main.container.pt-1
+    h1 Webbutveckling 1 och 2
+    h2 Exempel och övningar
+    p.lead
+      | Det här repositoryt samlar ett antal exempel över vanliga webbkomponenter och visar hur du kan koda dem.
+      | Arbeta dig igenom dina intresseområden och gör tillhörande övningar, eller hitta det du behöver och använd det.
+      | Repot är ett work in progress och hittar du något fel eller förbättring så gör gärna en pull request.
+      | Om du saknar något så skapa en 
+      a(href='https://github.com/jensnti/wu-ovningar/issues') issue
+      |  på GitHub och berättar vad.
+    p
+      | Innan du kör igång rekommenderar jag att du installerar VSCode extensionen Live server(av Ritwick Dey), så att du kan
+      | arbeta smidigare utan att behöva ladda om sidan. Installera, ladda om code och högerklicka sedan på html dokument
+      | och välj Open with live server.
+    p
+      | Om du arbetar med övningar så kan spara ditt eget arbete i mappen eget_arbete och pusha det till git.
+    p
+      | Validera din 
+      a(href='https://validator.nu/') HTML
+      |  och 
+      a(href='https://jigsaw.w3.org/css-validator/') CSS
+      | .
+    p
+      | Ett tips är att börja med navigationen och ikoner. När det är klart sammanför du det genom att skapa en
+      | hamburgermeny för detta. På så sätt får du en färdig navbar som du kan återanvända i dina andra projekt.
+    ul.uppgifter
+      li
+        a(href='navigation/') Navigation
+      li
+        a(href='ikoner/') Ikoner
+      li
+        a(href='hamburgare/') Hamburgermeny
+      li
+        a(href='helpers/') CSS Helpers
+      li
+        a(href='footer/') Sticky footer
+      li
+        a(href='knappar/') Knappar
+      a(href='knappar/')
+      li
+        a(href='knappar/')
+        a(href='animationer/') Css Animationer
+      li
+        a(href='layout/') Layout
+      a(href='layout/')
+      li
+        a(href='layout/')
+        a(href='sass/') sass
+      a(href='sass/')
+      li
+        a(href='sass/')
+        a(href='search/') Sökfält
+      li
+        a(href='darkmode/') Darkmode
+      li
+        a(href='responsive/') Responsiva övningar
+
+block footer
+  include components/footer.pug

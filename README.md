@@ -1,5 +1,11 @@
 # Webbutveckling
 
+Sidorna är byggda med pug och sass
+
+npm install
+npm install pug-cli -g
+npm install sass -g
+
 ## Efterfrågade övningar och exempel.
 
 Du har fått tillgång till detta repo genom Github classroom. Det är en template

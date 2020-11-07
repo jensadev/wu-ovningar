@@ -1,0 +1,26 @@
+{
+  "name": "wu-ovningar",
+  "version": "1.0.0",
+  "description": "## Efterfrågade övningar och exempel.",
+  "main": "index.js",
+  "scripts": {
+    "watch-html": "pug -w -P src/ -o ./",
+    "watch-css": "sass --watch sass/:css/",
+    "build": "pug -P src/ -o ./ && sass sass/:css/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jensnti/wu-ovningar.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jensnti/wu-ovningar/issues"
+  },
+  "homepage": "https://github.com/jensnti/wu-ovningar#readme",
+
+  "devDependencies": {
+    "pug": "^3.0.0"
+  }
+}
