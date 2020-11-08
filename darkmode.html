@@ -8,20 +8,27 @@
     <link rel="stylesheet" href="stylesheets/reset.css">
     <link rel="stylesheet" href="stylesheets/main.css">
     <link rel="stylesheet" href="stylesheets/helpers.css">
-    <title>Webbutveckling - Sticky footer</title>
+    <title>Webbutveckling - Darkmode</title>
+    <link rel="stylesheet" href="stylesheets/navbar.css">
     <link rel="stylesheet" href="stylesheets/footer.css">
   </head>
   <body class="flex h-100">
+    <nav class="navbar"><a class="brand" href="#">Navbar Brand</a>
+      <ul class="nav">
+            <li class="nav-item"><a class="nav-link" href="../">Hem</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Navigation</a></li>
+        <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#">Dropdown</a>
+          <ul class="nav dropdown-content">
+            <li class="dropdown-item"><a class="nav-link" href="#">Link</a></li>
+            <li class="dropdown-item"><a class="nav-link" href="#">Link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
     <main class="container pt-1">
-      <h1 class="text-caps">Sticky footer</h1>
-      <p class="lead">
-        En footer som håller sig på plats längst ned på sidan, en så kallad sticky footer,brukar vara något som många vill koda till sin sida.
-        Det är svårt att få till utan de rätta verktygen och ofta blir resultatet inte bra.
-      </p>
-      <p>
-        För att få till det så behöver du sätta sidans höjd till 100% av webbläsarens fönster-storlek,tillsammans med att använda flexbox för sidan. När detta är gjort så hålls footern
-        på plats med en automatisk top-marginal
-      </p>
+      <h1 class="text-caps">Darkmode</h1>
+      <h2>Fixa</h2>
+      <p class="lead">En trend här för att stanna.</p>
     </main>
     <footer class="footer">
       <div class="container text-small">
