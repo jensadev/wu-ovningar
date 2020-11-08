@@ -1,0 +1,56 @@
+extends layout
+
+block head
+  -var title = "Ikoner"
+  title Webbutveckling - #{title}
+
+  link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
+
+block content
+  main.container.pt-1
+    h1.text-caps= title
+    p.lead
+      | Det här exemplet använder 
+      a(href='https://material.io/resources/icons') Googles Material Design Icons 
+      | som ikoner.
+      | Det finns väldigt många bibliotek med ikoner på nätet, så det är bara att leta om du önskar något annat.
+    p
+      | För att använda Googles ikoner så behöver du länka in dess stylesheet från Googles CDN, på samma
+      | sätt som du använder Googles fonter.
+    p Sedan används &#x3C;i&#x3E; som element där ikonen ska placeras, där elementets innehåll är vilken ikon som ska användas.
+    code
+      | &#x3C;i class=&#x22;material-icons&#x22;&#x3E;accessibility&#x3C;/i&#x3E;
+    p
+      | Leta reda på ikonen du ska använda,
+      a(href='https://material.io/resources/icons') här
+      | och kopiera det element med tillhörande CSS klass som sidan visar. Till exempel:
+    code
+      | &#x3C;i class=&#x22;material-icons&#x22;&#x3E;article&#x3C;/i&#x3E;
+    p
+      | Resultatet blir då 
+      i.material-icons article
+      |  och så är du igång!
+    p
+      | Du kan använda ikoner i andra element, till exempel som knappar eller länkar. 
+      | Men ikonen kommer då påverkas av dina länk regler för a elementet. Placeringen är även beroende
+      | av din sidas line-height, eftersom ikonen är en font. Så om du inspeketerar css reglerna
+      | för ikonen så ser du klassens egenskaper.
+    p
+      |
+      a(href='#')
+        i.material-icons
+          | favorite
+    code
+      | &#x3C;a href=&#x22;#&#x22;>&#x3C;i class=&#x22;material-icons&#x22;&#x3E;favorite&#x3C;/i&#x3E;&#x3C;/a&#x3E;
+    p
+      | En större ikon kan skapas genom att ändra font storleken.
+    p
+      |
+      i.material-icons(style='font-size: 4rem;')
+        | favorite
+    h2 Uppgifter
+    ul.uppgifter
+      li Skapa en meny med bara ikoner.
+      li Prova att byta färg och storlek på ett antal ikoner.
+      li Hitta en webbsida där ikoner används, kopiera stilarna.
+      li Hitta ett annat Ikon-bibliotek än Googles och använd det.

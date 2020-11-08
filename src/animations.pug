@@ -1,0 +1,28 @@
+extends layout
+
+block head
+  -var title = "CSS Animationer"
+  title Webbutveckling - #{title}
+
+  link(rel="stylesheet", href="stylesheets/animations.css")
+
+block content
+  main.container.pt-1
+    h1.text-caps= title
+    p.lead 
+      | Här är ett exempel på CSS animationer hämtat från MDN. 
+      | Använd animationer sparsamt.
+    h2 Läs mer
+    ul.uppgifter
+      li
+        a(href='https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations') MDN: Using css animations
+      li
+        a(href='https://www.w3schools.com/css/css3_animations.asp') W3 specs
+    h2 Uppgifter
+    ul.uppgifter
+      li Läs på.
+      li Skapa fler animationer, testa med färger.
+      li Prova delay, och animationer som upprepas.
+      li Arbeta dig igenom de exempel som finns på MDN sidan och prova med javascript.
+
+  script(src="javascripts/animations.js")

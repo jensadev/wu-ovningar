@@ -1,0 +1,19 @@
+extends layout
+
+block head
+  -var title = "Sticky footer"
+  title Webbutveckling - #{title}
+
+  link(rel='stylesheet' href='stylesheets/footer.css')
+
+block content
+  main.container.pt-1
+    h1.text-caps= title
+    p.lead En footer som håller sig på plats längst ned på sidan, en så kallad sticky footer,
+      | brukar vara något som många vill koda till sin sida.
+      | Det är svårt att få till utan de rätta verktygen och ofta blir resultatet inte bra.
+    p För att få till det så behöver du sätta sidans höjd till 100% av webbläsarens fönster-storlek,
+      | tillsammans med att använda flexbox för sidan. När detta är gjort så hålls footern
+      | på plats med en automatisk top-marginal
+block footer
+  include components/footer.pug

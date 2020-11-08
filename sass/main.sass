@@ -1,0 +1,51 @@
+@use 'colors'
+@use 'fonts'
+@use 'media'
+
+body
+  line-height: 1.5
+  font-family: fonts.$body
+  font-weight: 400
+  color: rgb(var(--color-dark))
+  flex-direction: column
+
+h1
+  font-size: 2.4rem
+  font-weight: 800
+  font-family: fonts.$head
+  @include media.medium
+    font-size: 4rem
+
+h2
+  color: rgba(var(--color-dark), .8)
+  font-size: 1.6rem
+  font-weight: 500
+  font-family: fonts.$body
+  @include media.medium
+    font-size: 2rem
+
+p
+  display: block
+  margin: .5rem 0rem
+
+.lead
+  color: rgba(var(--color-dark), .8)
+  font-size: 1.2rem
+
+code
+  margin: 1rem 0rem
+  padding: 0rem 1rem
+  font-family: fonts.$code
+
+.uppgifter
+  margin: 1rem 0rem
+  padding: 0rem 2rem
+  list-style: disc
+
+a
+  text-decoration: none
+  color: rgb(var(--color-dark))
+  font-weight: 500
+  &:hover
+    text-decoration: underline
+    color: rgb(var(--color-primary))

@@ -1,0 +1,49 @@
+extends layout
+
+block head
+  -var title = "Responsiv design"
+  title Webbutveckling - #{title}
+
+  link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
+  link(rel="stylesheet", href="stylesheets/responsive.css")
+
+block content
+  main.container.pt-1
+    h1.text-caps= title
+    p.lead
+      | Med responsiv design menas att vi skapar en sida som ändrar karaktär baserat
+      | på klientens skärmtyp och eller storlek. Sidan anpassas för att passa klienten så bra som
+      | möjligt.
+    p
+      | För att testa din sida responsivt så är det enklast att arbeta med utvecklingsverktygen i webbläsaren.
+      | Tryck F12 eller CTRL+SHIFT+i för att öppna dessa. Du kan sedan klicka på ikonen (typ denna 
+      i.material-icons
+        | devices
+      | ) i panelen som öppnats. Du kan där prova ett antal devices eller sätta läget till responsiv och ändra storleken
+      | manuellt.
+    p
+      | Öppna panelen och ändra storleken på denna sida, vilka breakpoints kan du hitta baserat på bredden?
+      | Sättet vi gör detta på är genom något som heter media queries i CSS.
+    p
+      | Den här sidan får ett antal media queries, dels från main.css för container klassen som påverkar sidans
+      | marginaler och bredd, men även från responsive.css där fäger och annat ändras för att illustrera sidans
+      | breakpoints(de bredder där värden ändras).
+    h2 Läs mer
+    ul.uppgifter
+      li
+        a(href='https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design') MDN: Responsive design
+      li
+        a(href='https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries') MDN: Media queries
+      li
+        a(href='https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox"') MDN: Flexbox
+      li
+        a(href='https://developer.mozilla.org/en-US/docs/Web/CSS/font-size') MDN: Font size
+    h2 Uppgifter
+    ul.uppgifter
+      li Arbeta med att utveckla css filen för detta dokument.
+      li Läs på lite av extramaterialet och bilda dig en förståelse för hur det fungerar.
+      li
+        | Testa fler och andra breakpoints, det finns massor av devices. Jag har utgått från 
+        a(href='https://getbootstrap.com/') Bootstraps
+        |  värden.
+      li Lägg till din navigation i dokumentet och se till att den fungerar responsivt.

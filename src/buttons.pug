@@ -1,0 +1,40 @@
+extends layout
+
+block head
+  -var title = "Knappar"
+  title Webbutveckling - #{title}
+
+  link(rel="stylesheet", href="stylesheets/buttons.css")
+
+block content
+  main.container.pt-1
+    h1.text-caps= title
+    p.lead
+      | Material för hur du kan skapa knappar, styla knappar, 
+      | skapa länkar som ser ut som knappar och använda javascript med knappar.
+    p Här nedan följer ett antal exempel.
+    ul.btns
+      li
+        button Standard button
+      li
+        button.btn Styled button
+      li
+        button.btn.btn-rounded Rounded button
+      li
+        button#js-button.btn JS button
+      li
+        button#counter-button.btn Clicked: 0
+      li
+        a#a-button.btn(href='#') Link button
+    h2 Uppgifter
+    ul.uppgifter
+      li Skapa en egen knappstil.
+      li Skapa bakgrundsklasser för att byta färg på knappar.
+      li Styla om ett par länkar till knappar.
+      li
+        | När ska du använda button elementet, 
+        a(href='https://developer.mozilla.org/en-US/docs/Web/HTML/Element/button') läs här
+      li Skapa javascript, koppla det till knappen. Vad ska den göra?
+    p#text Kan du visa och dölja den här texten när JS knappen trycks ned?
+
+  script(src="javascripts/buttons.js")

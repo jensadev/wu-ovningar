@@ -1,9 +1,0 @@
-body {
-    flex-direction: column;
-}
-
-.footer {
-    margin-top: auto;
-    background-color: lightgrey;
-    padding: 1rem;
-}
