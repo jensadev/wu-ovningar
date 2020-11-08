@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html class="h-100" lang="sv">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Taviraj:ital@1&amp;family=Work+Sans:wght@400;500;800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/reset.css">
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <link rel="stylesheet" href="stylesheets/helpers.css">
+    <title>Webbutveckling - Responsiv design</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="stylesheets/responsive.css">
+  </head>
+  <body class="flex h-100">
+    <main class="container pt-1">
+      <h1 class="text-caps">Responsiv design</h1>
+      <p class="lead">
+        Med responsiv design menas att vi skapar en sida som ändrar karaktär baserat
+        på klientens skärmtyp och eller storlek. Sidan anpassas för att passa klienten så bra som
+        möjligt.
+      </p>
+      <p>
+        För att testa din sida responsivt så är det enklast att arbeta med utvecklingsverktygen i webbläsaren.
+        Tryck F12 eller CTRL+SHIFT+i för att öppna dessa. Du kan sedan klicka på ikonen (typ denna <i class="material-icons">devices</i>) i panelen som öppnats. Du kan där prova ett antal devices eller sätta läget till responsiv och ändra storleken
+        manuellt.
+      </p>
+      <p>
+        Öppna panelen och ändra storleken på denna sida, vilka breakpoints kan du hitta baserat på bredden?
+        Sättet vi gör detta på är genom något som heter media queries i CSS.
+      </p>
+      <p>
+        Den här sidan får ett antal media queries, dels från main.css för container klassen som påverkar sidans
+        marginaler och bredd, men även från responsive.css där fäger och annat ändras för att illustrera sidans
+        breakpoints(de bredder där värden ändras).
+      </p>
+      <h2>Läs mer</h2>
+      <ul class="uppgifter">
+        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design">MDN: Responsive design</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Media_queries">MDN: Media queries</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox&quot;">MDN: Flexbox</a></li>
+        <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-size">MDN: Font size</a></li>
+      </ul>
+      <h2>Uppgifter</h2>
+      <ul class="uppgifter">
+        <li>Arbeta med att utveckla css filen för detta dokument.</li>
+        <li>Läs på lite av extramaterialet och bilda dig en förståelse för hur det fungerar.</li>
+        <li>Testa fler och andra breakpoints, det finns massor av devices. Jag har utgått från <a href="https://getbootstrap.com/">Bootstraps</a> värden.</li>
+        <li>Lägg till din navigation i dokumentet och se till att den fungerar responsivt.</li>
+      </ul>
+    </main>
+  </body>
+</html>

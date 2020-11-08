@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html class="h-100" lang="sv">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Taviraj:ital@1&amp;family=Work+Sans:wght@400;500;800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/reset.css">
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <link rel="stylesheet" href="stylesheets/helpers.css">
+    <title>Webbutveckling - SASS</title>
+  </head>
+  <body class="flex h-100">
+    <main class="container pt-1">
+      <h1 class="text-caps">SASS</h1>
+      <h2>Syntactically Awesome Style Sheets</h2>
+      <p class="lead">Sass är ett verktyg för att förenkla och förbättra ditt arbete med CSS.</p>
+      <p>
+        Du skriver sass istället för CSS (vilket påminner väldigt mycket om CSS) men med
+        extra funktionalitet och förbättringar. Du kompilerar sedan detta till CSS.
+      </p>
+      <ul class="uppgifter">
+        <li><a href="https://jens-andreasson.gitbook.io/webbserverprogrammering/utvecklarmiljo/wsl">Guide för att installera WSL(Windows Subsystem Linux)</a></li>
+        <li><a href="https://jens-andreasson.gitbook.io/webbserverprogrammering/webbserver/node-introduktion">Guide för att sedan installera Node</a></li>
+      </ul>
+      <p>För att installera SASS så behöver du <a href="https://docs.npmjs.com/downloading-and-installing-node-js-and-npm">NPM </a>under WSL eller powershell. Du kan installera detta enskilt eller med <a href="https://nodejs.org/en/">Node</a>.
+        Enklast är att köra WSL och skriva: sudo apt install npm för att installera NPM-paketet.
+        Arbetar du med powershell så glöm inte att du måste uppdatera din PATH.
+      </p>
+      <p>
+        När du har installerat NPM så kan du installera SASS, gör det globalt. Under WSL skriv,
+        sudo npm install -g sass
+      </p>
+      <p>
+        Du ska nu vara redo för att köra SASS, testa genom att skriva sass i WSL. För att kompilera
+        SASS till CSS skriver du sass --watch input file/dir:output file/dir
+      </p>
+      <P>
+        De här sidorna använder SASS för all CSS så det kan vara en bra startpunkt att undersöka.
+        Du hittar filerna på <a href="">GitHub </a>.
+      </P>
+      <p>Läs mer: <a href="https://sass-lang.com/guide">SASS guide</a></p>
+    </main>
+  </body>
+</html>

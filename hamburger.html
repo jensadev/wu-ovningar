@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html class="h-100" lang="sv">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Taviraj:ital@1&amp;family=Work+Sans:wght@400;500;800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/reset.css">
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <link rel="stylesheet" href="stylesheets/helpers.css">
+    <title>Webbutveckling - Hamburgarmeny</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="stylesheets/navbar.css">
+    <link rel="stylesheet" href="stylesheets/hamburger.css">
+  </head>
+  <body class="flex h-100">
+    <nav class="navbar"><a href="#">Navbar</a>
+      <button class="navbar-toggle"><i class="material-icons">menu</i></button>
+      <div class="navbar-collapse">
+        <ul class="nav">
+          <li class="nav-item"><a class="nav-link active" href="../">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Link</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main class="container pt-1">
+      <h1 class="text-caps">Hamburgarmeny</h1>
+      <p class="lead">
+        Benämningen hamburgarmeny kommer från att ikonen ser ut som en burgare.
+        För att koda en sådan meny så behöver vi någon form av navigation och länkar.
+        Vi behöver också en meny-ikon, så det är bra om du arbetat med övningarna
+        för det momentet innan du gör detta.
+      </p>
+      <p>
+        Menyn kräver även Javascript. Det scriptet finns i mappen javascript,
+         länka till det i dokumentet med script taggen.
+      </p><code> &#x3C;script src=&#x22;js/hamburgare.js&#x22;&#x3E;&#x3C;/script&#x3E;</code>
+      <p>
+        När det är gjort så är det viktigt att du inte ändrar namn på klasser ochföljer strukturen som finns. Annars så är det risk att menyn slutar fungera.</p>
+      <h2>Uppgifter</h2>
+      <ul class="uppgifter">
+        <li>Skapa den faktiska menyn, se exempel från Navigation.</li>
+        <li>Ändra stilen på ikonen.</li>
+        <li>Jobba med stilarna på navbaren, padding / margin.</li>
+        <li>Lägg till fler / färre breakpoints för Media queries i CSS.</li>
+        <li>Jobba med CSS för att ändra stilen på hamburgerikonen öppen/stängd, se javascriptet.</li>
+      </ul>
+    </main>
+    <script src="javascripts/hamburger.js"></script>
+  </body>
+</html>
