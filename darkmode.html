@@ -11,6 +11,7 @@
     <title>Webbutveckling - Darkmode</title>
     <link rel="stylesheet" href="stylesheets/navbar.css">
     <link rel="stylesheet" href="stylesheets/footer.css">
+    <link rel="stylesheet" href="stylesheets/darkmode.css">
   </head>
   <body class="flex h-100">
     <nav class="navbar"><a class="brand" href="#">Navbar Brand</a>
@@ -27,14 +28,32 @@
     </nav>
     <main class="container pt-1">
       <h1 class="text-caps">Darkmode</h1>
-      <h2>Fixa</h2>
-      <p class="lead">En trend här för att stanna.</p>
+      <p class="lead">
+        En enkel start för ett darkmode. Det krävs en del arbete för att få till allt, 
+        men grunden är där. Javascript används för att byta tema med CSS-variabler och
+        valet sparas sedan i <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage">localStorage </a>för att komma ihåg vad användaren föredrar.
+      </p>
+      <p>Koden kommer från följande guide, <a href="https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8">dev.to</a>.</p>
+      <div class="flex items-center pt-1">
+        <label class="theme-switch" for="checkbox">
+          <input id="checkbox" type="checkbox">
+          <div class="slider round"></div>
+        </label>
+      </div>
+      <h2 class="pt-1">Uppgifter</h2>
+      <ul class="uppgifter">
+        <li>Fixa alla nyanser av färgerna.</li>
+        <li>Byt färgtema.</li>
+        <li>Fixa Dropdown menyn.</li>
+        <li>Fixa till den gigantiska switchen.</li>
+      </ul>
     </main>
+    <script src="javascripts/darkmode.js"></script>
     <footer class="footer">
       <div class="container text-small">
         <ul class="flex center-items justify-between">
           <li><a class="text-mute" href="https://github.com/jensnti/wu-ovningar" style="font-size: 0;">
-              <svg style="fill: rgba(30,30,30,.8);" height="32" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true">
+              <svg class="cat" height="32" viewBox="0 0 16 16" version="1.1" width="32" aria-hidden="true">
                 <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
               </svg>GitHub repo</a></li>
           <li><a class="text-mute" href="https://github.com/jensnti/wu-ovningar/issues">Problem? GitHub issue</a></li>

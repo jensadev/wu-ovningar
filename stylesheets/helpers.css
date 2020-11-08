@@ -6,6 +6,14 @@
   --color-blue: 44, 91, 201;
 }
 
+[data-theme=dark] {
+  --color-dark: 240, 240, 240;
+  --color-light: 30, 30, 30;
+  --color-white: 30, 30, 30;
+  --color-primary: 255, 67, 7;
+  --color-blue: 44, 91, 201;
+}
+
 .w-100 {
   width: 100%;
 }

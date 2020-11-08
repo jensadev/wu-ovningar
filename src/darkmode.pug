@@ -6,6 +6,7 @@ block head
 
   link(rel="stylesheet", href="stylesheets/navbar.css")
   link(rel="stylesheet", href="stylesheets/footer.css")
+  link(rel="stylesheet", href="stylesheets/darkmode.css")
 
 block nav
   include components/nav.pug
@@ -13,8 +14,30 @@ block nav
 block content
   main.container.pt-1
     h1.text-caps= title
-    h2 Fixa
-    p.lead En trend här för att stanna.
+    p.lead
+      | En enkel start för ett darkmode. Det krävs en del arbete för att få till allt, 
+      | men grunden är där. Javascript används för att byta tema med CSS-variabler och
+      | valet sparas sedan i 
+      a(href="https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage") localStorage 
+      | för att komma ihåg vad användaren föredrar.
+    p
+      | Koden kommer från följande guide, 
+      a(href="https://dev.to/ananyaneogi/create-a-dark-light-mode-switch-with-css-variables-34l8") dev.to
+      | .
+
+    div.flex.items-center.pt-1
+      label.theme-switch(for='checkbox')
+        input#checkbox(type='checkbox')
+        .slider.round
+
+    h2.pt-1 Uppgifter
+    ul.uppgifter
+      li Fixa alla nyanser av färgerna.
+      li Byt färgtema.
+      li Fixa Dropdown menyn.
+      li Fixa till den gigantiska switchen.
+
+  script(src="javascripts/darkmode.js")
 
 block footer
   include components/footer.pug
