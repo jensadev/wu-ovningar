@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html class="h-100" lang="sv">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css2?family=Taviraj:ital@1&amp;family=Work+Sans:wght@400;500;800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheets/reset.css">
+    <link rel="stylesheet" href="stylesheets/main.css">
+    <link rel="stylesheet" href="stylesheets/helpers.css">
+    <link rel="stylesheet" href="stylesheets/footer.css">
+    <title>Webbutveckling - Sökfält</title>
+    <link rel="stylesheet" href="stylesheets/navbar.css">
+  </head>
+  <body class="flex h-100">
+    <nav class="navbar justify-between"><a class="brand" href="/">Navbar Brand</a>
+      <form id="search">
+        <input id="search-field" type="text" placeholder="Search...">
+        <button type="submit">Search</button>
+      </form>
+    </nav>
+    <main class="container pt-1">
+      <h1 class="text-caps">Sökfält</h1>
+      <p class="lead">
+        Här finns ett sökfällt med javascripts funktionalitet i frontend, en fungerande
+        sökfunktion kräver dock backend.
+      </p>
+      <p>
+        Vi kan inte skapa en backend just nu för sökningar, men vi kan titta på
+        frontend delen. Ett sökfält med tillhörande knapp finns i navbaren ovan.
+      </p>
+      <p>Du sökte efter:</p>
+      <ul class="uppgifter" id="searches"></ul>
+      <h2>Uppgifter</h2>
+      <ul class="uppgifter">
+        <li>Skapa egna stilar för sökknappen.</li>
+        <li>Skapa egna stilar för sökfältet.</li>
+        <li>Kan du lägga till en sökikon i sökfältet? Ett tips är att kolla <a href="https://getbootstrap.com/docs/4.4/components/input-group/">Bootstraps input-groups</a>och kopiera deras stilar.</li>
+        <li>Skapa sökfältet med din navbar, dropdown och burgare.</li>
+        <li>För dig som läser Webbserverprogrammering:
+          <ul style="list-style-type:circle; padding-left: 1rem;">
+            <li>Koppla sökformuläret till en route.</li>
+            <li>Sök i databas.</li>
+            <li>Använd <a href="https://github.com/axios/axios">Axios </a>för att ladda sökningen.</li>
+          </ul>
+        </li>
+      </ul>
+    </main>
+    <script src="javascripts/search.js"></script>
+  </body>
+</html>

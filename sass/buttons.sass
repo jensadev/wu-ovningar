@@ -1,0 +1,20 @@
+@use 'colors'
+@use "sass:color"
+
+.btn
+  text-align: center
+  margin: 0 .25rem
+  padding: .375rem .75rem
+  color: rgb(var(--color-white))
+  background-color: rgb(var(--color-blue))
+  border: 1px solid transparent
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out
+
+  &:hover
+    background-color: rgb(71,114,215)
+
+  &-rounded
+    border-radius: 2rem
+
+.btns > li
+  padding: .5rem 0rem

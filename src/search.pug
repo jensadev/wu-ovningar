@@ -1,0 +1,46 @@
+extends layout
+
+block head
+  -var title = "Sökfält"
+  title Webbutveckling - #{title}
+
+  link(rel='stylesheet', href='stylesheets/navbar.css')
+
+block nav
+  nav.navbar.justify-between
+    a.brand(href='/') Navbar Brand
+    form#search
+      input#search-field(type='text' placeholder='Search...')
+      button(type='submit') Search
+
+
+block content
+  main.container.pt-1
+    h1.text-caps= title
+    p.lead
+      | Här finns ett sökfällt med javascripts funktionalitet i frontend, en fungerande
+      | sökfunktion kräver dock backend.
+    p
+      | Vi kan inte skapa en backend just nu för sökningar, men vi kan titta på
+      | frontend delen. Ett sökfält med tillhörande knapp finns i navbaren ovan.
+
+    p Du sökte efter:
+    ul#searches.uppgifter
+    h2 Uppgifter
+    ul.uppgifter
+      li Skapa egna stilar för sökknappen.
+      li Skapa egna stilar för sökfältet.
+      li
+        | Kan du lägga till en sökikon i sökfältet? Ett tips är att kolla 
+        a(href='https://getbootstrap.com/docs/4.4/components/input-group/') Bootstraps input-groups
+        | och kopiera deras stilar.
+      li Skapa sökfältet med din navbar, dropdown och burgare.
+      li För dig som läser Webbserverprogrammering:
+        ul(style="list-style-type:circle; padding-left: 1rem;")
+          li Koppla sökformuläret till en route.
+          li Sök i databas.
+          li Använd 
+            a(href="https://github.com/axios/axios") Axios 
+            | för att ladda sökningen.
+
+  script(src="javascripts/search.js")

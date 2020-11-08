@@ -3,6 +3,7 @@
   --color-light: 240, 240, 240;
   --color-white: 255, 255, 255;
   --color-primary: 255, 67, 7;
+  --color-blue: 44, 91, 201;
 }
 
 body {
@@ -27,7 +28,7 @@ h2 {
   color: rgba(var(--color-dark), 0.8);
   font-size: 1.6rem;
   font-weight: 500;
-  font-family: "Taviraj", serif;
+  font-family: "Work Sans", sans-serif;
 }
 @media (min-width: 768px) {
   h2 {

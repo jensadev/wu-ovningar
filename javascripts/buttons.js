@@ -7,7 +7,7 @@ window.addEventListener('load', (event) => {
     
     // Hitta knappen i DOM-trädet och spara den i variabeln button.
     // Ett tips är att kunna och känna till vilka olika selectors vi kan använda.
-    // Vad är ens en selector?
+    // Vad är en selector?
     // https://developer.mozilla.org/en-US/docs/Glossary/CSS_Selector
     // https://developer.mozilla.org/en-US/docs/Web/API/Element/querySelector
     let button = document.querySelector('#js-button');

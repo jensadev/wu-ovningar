@@ -1,14 +1,14 @@
 extends layout
 
 block head
-  -var title = "Navigation"
+  -var title = "Ikoner"
   title Webbutveckling - #{title}
 
   link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
 
 block content
   main.container.pt-1
-    h1.text-caps Ikoner
+    h1.text-caps= title
     p.lead
       | Det här exemplet använder 
       a(href='https://material.io/resources/icons') Googles Material Design Icons 

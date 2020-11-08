@@ -4,10 +4,14 @@ mixin li-link(target, text)
   li
     a(href=target)= text
 
+block head
+  -var title = "Exempel och övningar"
+  title Webbutveckling - #{title}
+
 block content
-   main.container.pt-1
+  main.container.pt-1
     h1.text-caps Webbutveckling 1-2
-    h2 Exempel och övningar
+    h2= title
     p.lead
       | Det här repositoryt samlar ett antal exempel över vanliga webbkomponenter och visar hur du kan koda dem.
       | Arbeta dig igenom dina intresseområden och gör tillhörande övningar, eller hitta det du behöver och använd det.
@@ -20,6 +24,11 @@ block content
       a(href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer") Live server
       |, så att du förenklar ditt arbetsflöde. Installera, ladda om code och högerklicka sedan på html-dokument
       | och välj Open with live server.
+    p
+      | En del av sidorna innehåller instruktioner för hur du går tillväga för att 
+      | koda och återskapa dem, men oavsett det så förväntas du inspektera
+      | och undersöka källkoden på sidorna.
+      | Så öppna utvecklarverktygen i webbläsaren (F12) och se till att Inspektera dokumentet.
     p
       | Alla sidorna innehåller en eller flera övningar för dig att arbeta med.
     p
@@ -38,9 +47,8 @@ block content
       +li-link('hamburger.html', 'Hamburgarmeny')
       +li-link('helpers.html', 'CSS Helpers')
       +li-link('footer.html', 'Sticky footer')
-      +li-link('knappar.html', 'Knappar')
-      +li-link('animationer.html', 'Css Animationer')
-      +li-link('layout.html', 'Layout')
+      +li-link('buttons.html', 'Knappar')
+      +li-link('animations.html', 'Css Animationer')
       +li-link('sass.html', 'Sass')
       +li-link('search.html', 'Sökfält')
       +li-link('darkmode.html', 'Darkmode')
