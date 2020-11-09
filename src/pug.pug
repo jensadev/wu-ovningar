@@ -1,0 +1,26 @@
+extends layout
+
+block head
+  -var title = "Pug"
+  title Webbutveckling - #{title}
+
+block content
+  main.container.pt-1
+    h1.text-caps= title
+    p.lead
+      | Pug är ett verktyg(likt 
+      a(href="sass.html") SASS 
+      | ) för att ändra på arbetsflödet med HTML.
+      | Pug låter dig skapa templater och återanvända kod för att förenkla ditt arbete.
+    p
+      | För att köra Pug, så behöver du installera det. Detta görs med NPM
+      | och du behöver versionen med cli support.
+      a(href="https://www.npmjs.com/package/pug") Pug på NPM
+      | .
+    p För att installera kör du npm install pug-cli -g
+    p Den här sidan och undersidorna är byggda med Pug, så kolla repot om du är intresserad.
+    h2 Syntax
+    p
+      | Pugs syntax skiljer sig något från att skriva HTML.
+      | Pug använder indentering för att indikera vilket innehåll som hör
+      | till taggarna och indentering för att nästa dem.
