@@ -1,0 +1,12 @@
+@keyframes rotate
+  from
+    transform: rotate(0)
+  to
+    transform: rotate(1turn)
+
+.cls-1
+  fill: transparent
+  &:hover
+    fill: rgb(var(--color-primary))
+    animation: rotate 10s linear infinite
+    transform-origin: center

@@ -1,0 +1,19 @@
+extends layout
+
+block head
+  -var title = "SVG"
+  title Webbutveckling - #{title}
+
+  link(rel='stylesheet' href='stylesheets/svg.css')
+
+block content
+  main.container.pt-3
+    h1.text-caps= title
+    p.lead
+      | stuff
+    svg#Layer_1(data-name='Layer 1' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48')
+      polygon.cls-1(points='29.79 45.6 45.6 29.79 39.81 8.19 18.21 2.4 2.4 18.21 8.19 39.81 29.79 45.6')
+
+
+
+
