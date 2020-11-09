@@ -38,20 +38,8 @@ h1 {
     font-size: 4rem;
   }
 }
-h1::first-letter {
+h1:hover {
   color: rgb(var(--color-primary));
-}
-h1::after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 2px;
-  background: rgb(var(--color-primary));
-  background: linear-gradient(90deg, rgb(var(--color-primary)), rgb(var(--color-light)));
-  transition: width 0.3s;
-}
-h1:hover::after {
-  width: 100%;
 }
 
 h2 {
