@@ -1,16 +1,16 @@
 :root {
-  --color-dark: 30, 30, 30;
-  --color-light: 240, 240, 240;
+  --color-dark: 34, 29, 28;
+  --color-light: 246, 243, 246;
   --color-white: 255, 255, 255;
-  --color-primary: 255, 67, 7;
+  --color-primary: 238, 66, 102;
   --color-blue: 44, 91, 201;
 }
 
 [data-theme=dark] {
-  --color-dark: 240, 240, 240;
-  --color-light: 30, 30, 30;
-  --color-white: 30, 30, 30;
-  --color-primary: 255, 67, 7;
+  --color-dark: 246, 243, 246;
+  --color-light: 34, 29, 28;
+  --color-white: 34, 29, 28;
+  --color-primary: 238, 66, 102;
   --color-blue: 44, 91, 201;
 }
 

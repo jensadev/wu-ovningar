@@ -17,6 +17,9 @@ h1
   color: rgb(var(--color-dark))
   @include media.medium
     font-size: 4rem
+  &:hover
+    text-shadow: -1px -1px 0 rgb(var(--color-primary)), 1px -1px 0 rgb(var(--color-primary)), -1px 1px 0 rgb(var(--color-primary)), 1px 1px 0 rgb(var(--color-primary))
+    color: rgb(var(--color-white))
 
 h2
   color: rgba(var(--color-dark), .8)
