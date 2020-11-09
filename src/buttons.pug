@@ -7,7 +7,7 @@ block head
   link(rel="stylesheet", href="stylesheets/buttons.css")
 
 block content
-  main.container.pt-1
+  main.container.pt-3
     h1.text-caps= title
     p.lead
       | Material för hur du kan skapa knappar, styla knappar, 
@@ -25,12 +25,14 @@ block content
       li
         button.btn.btn-rounded Rounded button
       li
+        button.btn.btn-rounded.btn-animated Animated button
+      li
         button#js-button.btn JS button
       li
         button#counter-button.btn Clicked: 0
       li
         a#a-button.btn(href='#') Link button
-    h2 Uppgifter
+    h2.pt-1 Uppgifter
     ul.uppgifter
       li Skapa en egen knappstil.
       li Skapa bakgrundsklasser för att byta färg på knappar.

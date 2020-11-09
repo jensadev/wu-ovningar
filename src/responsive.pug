@@ -8,7 +8,7 @@ block head
   link(rel="stylesheet", href="stylesheets/responsive.css")
 
 block content
-  main.container.pt-1
+  main.container.pt-3
     h1.text-caps= title
     p.lead
       | Med responsiv design menas att vi skapar en sida som ändrar karaktär baserat
@@ -28,7 +28,7 @@ block content
       | Den här sidan får ett antal media queries, dels från main.css för container klassen som påverkar sidans
       | marginaler och bredd, men även från responsive.css där fäger och annat ändras för att illustrera sidans
       | breakpoints(de bredder där värden ändras).
-    h2 Läs mer
+    h2.pt-1 Läs mer
     ul.uppgifter
       li
         a(href='https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design') MDN: Responsive design
@@ -38,7 +38,7 @@ block content
         a(href='https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Flexbox"') MDN: Flexbox
       li
         a(href='https://developer.mozilla.org/en-US/docs/Web/CSS/font-size') MDN: Font size
-    h2 Uppgifter
+    h2.pt-1 Uppgifter
     ul.uppgifter
       li Arbeta med att utveckla css filen för detta dokument.
       li Läs på lite av extramaterialet och bilda dig en förståelse för hur det fungerar.

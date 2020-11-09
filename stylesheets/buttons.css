@@ -30,6 +30,13 @@
 .btn-rounded {
   border-radius: 2rem;
 }
+.btn-animated {
+  background: rgb(var(--color-primary));
+  transition: background 0.3s;
+}
+.btn-animated:hover {
+  background: rgb(var(--color-dark));
+}
 
 .btns > li {
   padding: 0.5rem 0rem;

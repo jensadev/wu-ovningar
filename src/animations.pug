@@ -7,10 +7,13 @@ block head
   link(rel="stylesheet", href="stylesheets/animations.css")
 
 block content
-  main.container.pt-1
+  main.container.pt-3
     h1.text-caps= title
     p.lead 
-      | Här är ett exempel på CSS animationer hämtat från MDN. 
+      | Den här texten visar några exempel på CSS animationer hämtat från MDN. 
+      | Ett annat exempel är hover effekten på sidrubriken och 
+      a(href="buttons.html") knappsidan
+      |.
       | Använd animationer sparsamt.
     h2 Läs mer
     ul.uppgifter
@@ -18,7 +21,7 @@ block content
         a(href='https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations') MDN: Using css animations
       li
         a(href='https://www.w3schools.com/css/css3_animations.asp') W3 specs
-    h2 Uppgifter
+    h2.pt-1 Uppgifter
     ul.uppgifter
       li Läs på.
       li Skapa fler animationer, testa med färger.

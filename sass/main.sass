@@ -17,11 +17,24 @@ h1
   color: rgb(var(--color-dark))
   line-height: 1
   letter-spacing: .2rem
+  margin-bottom: 1rem
   @include media.medium
     font-size: 4rem
 
   &::first-letter
     color: rgb(var(--color-primary))
+
+  &::after
+    content: ''
+    display: block
+    width: 0
+    height: 2px
+    background: rgb(var(--color-primary))
+    background: linear-gradient(90deg, rgb(var(--color-primary)), rgb(var(--color-light)))
+    transition: width .3s
+
+  &:hover::after
+    width: 100%
 
 h2
   color: rgba(var(--color-dark), .8)
