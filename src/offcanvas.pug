@@ -1,0 +1,37 @@
+extends layout
+
+mixin nav-link(href, name)
+  if name === title
+    li.nav-item
+      a.nav-link.active(href=href)= name
+  else
+    li.nav-item
+      a.nav-link(href=href)= name
+
+
+block head
+  -var title = "Off canvas menu"
+  title Webbutveckling - #{title}
+
+  link(rel="stylesheet", href="stylesheets/offcanvas.css")
+
+block nav
+  nav.sidenav.h-100.flex
+    div.flex.h-100.center-items
+      button.btn-sidenav Menu
+    div.h-100
+      a.brand(href='#') Brand
+      ul.nav
+        +nav-link('index.html', 'Hem')
+        +nav-link('#', 'Navigation')
+        li.nav-item.dropdown
+          a.nav-link.dropdown-toggle(href='#') Dropdown
+          ul.nav.dropdown-content
+            li.dropdown-item
+              a.nav-link(href='#') Link
+            li.dropdown-item
+              a.nav-link(href='#') Link
+
+block content
+  main.container.pt-3
+    h1.text-caps= title

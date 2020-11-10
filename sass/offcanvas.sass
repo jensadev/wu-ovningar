@@ -1,0 +1,24 @@
+/* The side navigation menu */
+.sidenav
+  width: 3rem
+  position: fixed
+  z-index: 1
+  top: 0
+  right: 0
+  background-color: rgb(var(--color-dark))
+  overflow-x: hidden
+  transition: 0.5s
+  flex-direction: row
+
+.btn-sidenav
+  transform: rotate(-90deg)
+  transform-origin: center
+  background-color: transparent
+  color: rgb(var(--color-light))
+  font-weight: 500
+  font-size: 1.4rem
+  border: none
+  padding: 0
+
+  &:focus
+    outline: none
