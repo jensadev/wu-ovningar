@@ -13,24 +13,44 @@
   </head>
   <body class="flex h-100">
     <nav class="sidenav h-100 flex">
-      <div class="flex h-100 center-items">
-        <button class="btn-sidenav">Menu</button>
+      <div class="flex h-100 center-items border-right">
+        <button class="btn-sidenav" id="menu">Menu</button>
       </div>
-      <div class="h-100"><a class="brand" href="#">Brand</a>
-        <ul class="nav">
-          <li class="nav-item"><a class="nav-link" href="index.html">Hem</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Navigation</a></li>
-          <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#">Dropdown</a>
-            <ul class="nav dropdown-content">
-              <li class="dropdown-item"><a class="nav-link" href="#">Link</a></li>
-              <li class="dropdown-item"><a class="nav-link" href="#">Link</a></li>
-            </ul>
-          </li>
+      <div class="menu h-100 w-100"><a class="brand pl-1 pt-3" href="#">Brand</a>
+        <ul class="nav pt-3">
+          <li class="nav-item border-top"><a class="nav-link" href="index.html">Hem</a></li>
+          <li class="nav-item border-top"><a class="nav-link active" href="#">Off canvas menu</a></li>
+          <li class="nav-item border-top"><a class="nav-link" href="#">Om</a></li>
+          <li class="nav-item border-top"><a class="nav-link" href="#">Kontakt</a></li>
         </ul>
       </div>
     </nav>
     <main class="container pt-3">
       <h1 class="text-caps">Off canvas menu</h1>
+      <p class="lead">
+        En annan efterfrågad variant av navigation på webbsidor 
+        är det som kallas för off canvas menu, alltså en meny som är
+        dold utanför sidan(canvas) tills den ska visas.
+        Menyn kräver lite javascript och exemplet här kan anpassas till 
+        visas från vänster eller höger.
+      </p>
+      <p>Det är många av klasserna som har anpassats utifrån <a href="navigation.html">Navbar exemplet</a>, så lägg lite tid att studera dem.
+        Det finns även en klass för att mörka resten av sidan
+        när menyn är öppen.
+      </p>
+      <p>
+         För att få allt att fungera så används lite javascript, se filen
+        offcanvas.js
+      </p>
+      <h2 class="pt-1">Uppgifter</h2>
+      <ul class="uppgifter">
+        <li>Testa de olika funktionerna i JS filen som är kommenterade.</li>
+        <li>Byt ut Brand mot ikon, text, logga.</li>
+        <li>Byt sida på menyn, så att den kommer från vänster.</li>
+        <li>Byt ut Menu knappen mot en meny-ikon.</li>
+        <li>Använd media queries för att göra menyn fullscreen på small devices.</li>
+      </ul>
     </main>
+    <script src="javascripts/offcanvas.js"></script>
   </body>
 </html>
